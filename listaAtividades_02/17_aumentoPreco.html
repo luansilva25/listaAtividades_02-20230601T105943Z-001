@@ -1,0 +1,31 @@
+<meta charset="UTF-8" />
+<script>
+    // Recebe o preço do produto e calcula o aumento do preço, baseado no seguinte critério:
+    //- até 280(inclusive): aumento de 20 %
+    //- até 700(inclusive): aumento de 15 %
+    //- até 1500(inclusive): aumento de 10 %
+    //- acima de 1500: aumento de 5 %
+
+    // Entrada
+    const preco = Number(prompt("informe o preco"))
+    const aumento1 = preco + (preco * 0.20)
+    const aumento2 = preco + (preco * 0.15)
+    const aumento3 = preco + (preco * 0.10)
+    const aumento4 = preco + (preco * 0.05)
+    // Processamento
+    if (preco <= 280) {
+        alert(`o preço agora é de ${aumento1}`)
+    }
+    else if (preco >= 281 && preco <= 700) {
+        alert(`o preço é de ${aumento2}`)
+    }
+    else if (preco >= 701 && preco <= 1500) {
+        alert(`o preço é de ${aumento3}`)
+    }
+    else {
+        alert(`o preço é de ${aumento4}`)
+    }
+
+    // Saída
+
+</script>

@@ -1,0 +1,42 @@
+<script>
+    /*
+    //PROBLEMA
+    Um posto está vendendo combustíveis com a seguinte tabela de descontos:
+    Álcool:
+    - até 20 litros, desconto de 3% por litro
+    - acima de 20 litros, desconto de 5% por litro
+
+    Gasolina:
+    - até 20 litros, desconto de 4% por litro
+    - acima de 20 litros, desconto de 6% por litro
+    
+    Escreva um algoritmo que leia o número de litros vendidos, o tipo de combustível (codificado da seguinte forma: A-álcool, G-gasolina), 
+    calcule e imprima o valor a ser pago pelo cliente sabendo-se que o preço do litro da gasolina é R$ 6,50 o preço do litro do álcool é R$ 6,10.
+    */
+
+    //ENTRADA
+    const alcool=Number(prompt('informe quantos litros deseja'))
+    const gasolina=Number(prompt('informe quantos litros deseja da gasolina'))
+    const descontoG= Number(gasolina*6.50)-(gasolina*6.50*0.04)
+    const descontoG2= Number(gasolina*6.50)-(gasolina*6.50*0.06)
+    const descontoA= Number(alcool*6.10)-(alcool*6.10*0.03)
+    const descontoA2= Number(alcool*6.10)-(alcool*6.10*0.05)
+    
+    //PROCESSAMENTO
+    if(alcool <= 20 ){
+        alert(`o valor do litro é de R$ ${descontoA.toFixed(2).replace('.',',')}`)
+    }
+    else if(alcool > 20){
+        alert(`o valor do litro é de R$ ${descontoA2.toFixed(2).replace('.',',')}`)
+    }
+    else if(gasolina <= 20){
+        alert(` o valor do litro é de R$ ${descontoG.toFixed(2).replace('.',',')}`)
+    }
+    else if(gasolina > 20){
+        alert(` o valor do litro é de R$ ${descontoG2.toFixed(2).replace('.',',')}`)
+    }
+    
+    //SAÍDA
+    
+
+</script>
